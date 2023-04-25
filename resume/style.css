@@ -7,5 +7,10 @@ h1 {
     border-width: 0.1px;
 }
 
+#position {
+    font-size: 18px;
+}
 
-
+.summary {
+    font-size: 16px;
+}
