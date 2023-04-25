@@ -1,5 +1,6 @@
 h1 {
     font-size: 28px;
+    text-transform: uppercase;
 }
 
 #position {
@@ -9,6 +10,7 @@ h1 {
 
 .summary {
     font-size: 16px;
+    line-height: 20px;
 }
 
 h2 {
@@ -18,4 +20,12 @@ h2 {
 
 body {
   font-family: Tahoma;
+}
+
+header {
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
 }
