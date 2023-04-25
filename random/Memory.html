@@ -12,17 +12,13 @@
 
     <main>
         <h1 style="color:black;text-align: center;">Pasca-highschool</h1>
-        <ul>
-            <li style="color:lightcoral; border: 1px red solid;">SNMPTN</li>
-            <img src="media/SNMPTN.png" width="683">
-            <button style="background-color: skyblue;">LIKE</button>
-            <li style="color:lightcoral; border:1px red solid">SBMPTN</li>
-            <img src="media/SBMPTN.png" width="683">
-            <button style="background-color: skyblue;">LIKE</button>
-            <li style="color:blue; border: 1px blue solid;">SMJU-UTUL</li>
-            <img src="media/SMJU-UTUL.png" width="683">
-            <button style="background-color: skyblue;">LIKE</button>
-        </ul>
+        <img id="exams" src="media/SNMPTN.png">
+
+        <button onclick="exams.src='media/SNMPTN.png'; alert('Ini SNMPTN')">SNMPTN</button>
+        <button onclick="exams.src='media/SBMPTN.png'; alert('Ini SBMPTN')">SBMPTN</button>
+        <button onclick="exams.src='media/SMJU-UTUL.png'; alert('Ini SMJU-UTUL')">SMJU-UTUL</button>
+        <button style="background-color: skyblue;" onclick="alert('You like this picture')">LIKE</button>
+        <button style="background-color: rgb(255, 71, 71);" onclick="alert('Fuck you')">HATE</button>
 
         <h1 style="color:black;text-align: left;">Timeline</h1>
         <table>
