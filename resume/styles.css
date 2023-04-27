@@ -44,6 +44,19 @@ footer {
     background-color: #eeeeee;
 }
 
+footer a {
+    color: #2793ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: #9f4bff;
+}
+
 ul {
     margin: 0px;
 }
