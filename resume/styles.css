@@ -13,6 +13,10 @@ h1 {
     line-height: 20px;
 }
 
+.summary img {
+    float: right;
+}
+
 h2 {
     color: #2F5A78;
     font-size: 20px;
@@ -21,7 +25,8 @@ h2 {
 }
 
 body {
-  font-family: Tahoma;
+    font-family: Tahoma;
+    margin-top: 100px;
 }
 
 header {
@@ -29,6 +34,10 @@ header {
     padding-top: 2px;
     padding-bottom: 2px;
     background-color: #eeeeee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #copyright {
@@ -100,12 +109,16 @@ label {
 
 input[type='submit'] {
     background-color: #2F5A78;
+    width: 75px;
+    height: 30px;
     border: none;
     color: white;
     font-weight: bold;
     margin: 7px;
+    transition: width 1s, height 1s;
 }
 
 input[type='submit']:hover {
-    background-color: #569ed1;
+    width: 85px;
+    height: 40px;
 }
