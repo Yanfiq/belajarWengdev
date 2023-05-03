@@ -38,8 +38,8 @@ header {
 
 #nowPlay {
     z-index: 2;
-    width: 560px;
-    height: 315px;
+    width: 900px;
+    aspect-ratio: 16 / 9;
 }
 
 .player {
