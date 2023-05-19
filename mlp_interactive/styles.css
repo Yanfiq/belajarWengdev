@@ -2,11 +2,14 @@ header {
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
-    background-color: #eeeeee;
-    font-family: Tahoma;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background-color: #3f3e3e;
+    color: #f1f1f1;
+    font-family: Arial;
+    margin: 0px, 500px, 10px, 50px;
+}
+
+body {
+    background-color: rgb(34, 33, 33);
 }
 
 .choice {
@@ -18,13 +21,32 @@ header {
     justify-content: center;
 }
 
+@keyframes visibility {
+    0% {
+        opacity: 0%;;
+      }
+      100% {
+        opacity: 100%;;
+      }
+    }
+
 .choice input[type='submit'] {
     background-color: #f1f1f1;
     z-index: 1;
     margin: 10px;
     padding: 10px;
     font-size: 20px;
+    opacity: 0%;
+    animation: 5s ease-out 90s 1 visibility;
+    animation-fill-mode: forwards;
 }
+/*
+.choice input[type='submit']:hover {
+    transform: scale(1.2, 1.2);
+    background-color: aqua;
+    z-index: 2;
+}
+*/
 
 #nowPlay {
     z-index: 2;
@@ -32,39 +54,43 @@ header {
     height: 506px;
 }
 
-#titlePicture {
-    display: inline;
+#changeTitle {
+    display: flex;
 }
 
-#titlePicture img {
-
-    width: 336px;
-    height: 188px;
-    position: relative;
+#changeTitle .season {
+    width: auto;
+    height: auto;
     margin: 10px;
 }
 
-#titlePicture img:hover {
-    opacity: 50%;
-}
-
-#titlePicture div {
+#changeTitle .season .episode{
     margin: 10px;
-    position: absolute;
-    font-family: Tahoma;
-    font-size: 30px;
-    width: 336px;
-    height: 188px;
-    text-align: center;
-    line-height: 100px;
-    border: 0.1px dashed #f69c55;
-    display: inline;
 }
 
-#titlePicture div p{
-    display: inline-block;
+#changeTitle .season .episode > * {
     vertical-align: middle;
-    line-height: normal;
+}
+
+#changeTitle .season .episode img{
+    width: 336px;
+    height: 188px;
+}
+
+#changeTitle .season .episode p{
+    width: 336px;
+    height: 188px;
+    display: inline-block;
+    color: #f1f1f1;
+    font-family: Arial;
+    font-size: 30px;
+    z-index: -1;
+    position: absolute;
+    transition: opacity 0.5s;
+}
+
+#changeTitle .season .episode img:hover {
+    opacity: 40%;
 }
 
 .player {
@@ -72,7 +98,8 @@ header {
     justify-content: center;
 }
 
-h1 {
-    font-family: Tahoma;
+h1, h2{
+    font-family: Arial;
     text-align: center;
+    color: #f1f1f1;
 }
