@@ -65,6 +65,9 @@ body {
 }
 
 #changeTitle .season .episode{
+    height: 188px;
+    line-height: 188px;
+    width: 336px;
     margin: 10px;
 }
 
@@ -78,15 +81,15 @@ body {
 }
 
 #changeTitle .season .episode p{
-    width: 336px;
-    height: 188px;
-    display: inline-block;
     color: #f1f1f1;
     font-family: Arial;
     font-size: 30px;
     z-index: -1;
     position: absolute;
-    transition: opacity 0.5s;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0% 0%;
 }
 
 #changeTitle .season .episode img:hover {
@@ -96,6 +99,7 @@ body {
 .player {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 h1, h2{
